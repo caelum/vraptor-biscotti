@@ -4,8 +4,10 @@ import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
 import br.com.caelum.vraptor.BeforeCall;
+import br.com.caelum.vraptor.Intercepts;
 import br.com.caelum.vraptor.environment.Environment;
 
+@Intercepts
 public class LanguageInterceptor {
 
 	private Cookie cookie;

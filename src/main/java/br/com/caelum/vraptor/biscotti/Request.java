@@ -2,9 +2,11 @@ package br.com.caelum.vraptor.biscotti;
 
 import java.util.Optional;
 
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
+@RequestScoped
 public class Request implements LanguageScope {
 
 	private static final String KEY = "br.com.caelum.vraptor.i18n.language";

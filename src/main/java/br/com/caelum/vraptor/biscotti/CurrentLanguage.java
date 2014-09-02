@@ -1,7 +1,9 @@
 package br.com.caelum.vraptor.biscotti;
 
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 
+@RequestScoped
 public class CurrentLanguage {
 
 	private Application app;

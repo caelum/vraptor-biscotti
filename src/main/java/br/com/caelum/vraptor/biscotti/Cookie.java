@@ -4,10 +4,12 @@ import static java.util.Arrays.stream;
 
 import java.util.Optional;
 
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@RequestScoped
 public class Cookie implements LanguageScope {
 
 	private static final String KEY = "br.com.caelum.vraptor.i18n.language";
